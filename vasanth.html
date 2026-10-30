@@ -1,0 +1,89 @@
+<!-- grid pratice row+col=grid -->
+ <!-- flex=is a only control by col or row -->
+<style>
+    .one{
+        background-color: blue;
+        color: white;
+        padding: 20px;
+    }
+    .two{
+        background-color:orange;
+        color: white;
+    }
+    .three{
+        background-color: yellow;
+        color: white;
+        padding: 20px;
+    }
+    .first-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        
+    }
+    .main{
+        background-color: green;
+        color: white;
+        margin: 5px;
+        height: 100px;
+        justify-content: center;
+        display: grid;
+        align-items: center;
+    }
+    .side{
+        background-color: aqua;
+        color: white;
+        margin: 5px;
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .killa{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .twin1{
+        background-color: blueviolet;
+        color: white;
+        height: 100px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .twin2{
+        background-color:black;
+        color: white;
+        height: 100px;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+ <div>
+    <div class="one">
+        header
+        
+
+    </div>
+    <div class="two">
+        <div class="first-container">
+            <h1 class="main">main-containent</h1>
+            <h1 class="side">side-bar</h1>
+
+        </div>
+        <div class="killa">
+            <h1 class="twin1">.twin</h1>
+            <h1 class="twin2">.twin</h1>
+
+        </div>
+        
+
+    </div>
+    <div class="three">
+        footer
+
+    </div>
+</div>
